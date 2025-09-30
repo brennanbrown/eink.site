@@ -1,0 +1,28 @@
+# Netlify configuration for E-Ink Reader Website
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+
+[build.environment]
+  RUBY_VERSION = "3.2.0"
+  JEKYLL_ENV = "production"
+
+# Redirect rules (if needed)
+[[redirects]]
+  from = "/speeches.html"
+  to = "/speeches/"
+  status = 301
+
+# Headers for performance and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+
+# Cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
