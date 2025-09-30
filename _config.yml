@@ -2,8 +2,8 @@
 # Minimal Jekyll configuration optimized for e-ink devices
 
 # Site settings
-title: "E-Ink Speech Reader"
-description: "Minimalist speech and presentation reader optimized for e-ink devices"
+title: "E-Ink Reader"
+description: "Minimalist text reader optimized for e-ink devices - display your notes, articles, and documents with maximum readability"
 author: "Your Name" # Change this to your name
 baseurl: "" # Leave empty for root deployment, or "/repo-name" for GitHub Pages subdirectory
 url: "" # Your site URL (e.g., https://yourdomain.com or leave empty for Netlify auto-detect)
@@ -26,6 +26,7 @@ exclude:
   - docs/
   - vendor/
   - netlify.toml
+  - speeches.md
 
 # Collections (for future expansion)
 collections:

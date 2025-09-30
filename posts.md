@@ -1,9 +1,9 @@
 ---
 layout: default
-title: All Speeches
+title: All Posts
 ---
 
-# All Speeches
+# All Posts
 
 ## By Date
 
