@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <style>
+        /* Minimal inline CSS optimized for e-ink displays */
+        body { 
+            font-family: serif; 
+            margin: 0; 
+            padding: 1em;
+            background: white;
+            color: black;
+            line-height: 1.4;
+        }
+        h1, h2, h3 { 
+            margin: 0.5em 0; 
+        }
+        h1 { 
+            font-size: 1.4em; 
+        }
+        h2 { 
+            font-size: 1.2em; 
+        }
+        p { 
+            margin: 0.5em 0; 
+        }
+        a { 
+            color: #000; 
+            text-decoration: underline; 
+        }
+        a:visited { 
+            color: #333; 
+        }
+        .container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+        }
+        .post-date { 
+            color: #666; 
+            font-size: 0.9em; 
+        }
+        nav { 
+            margin: 1em 0; 
+            padding-bottom: 0.5em;
+            border-bottom: 1px solid #000;
+        }
+        footer { 
+            margin-top: 2em; 
+            padding-top: 0.5em;
+            border-top: 1px solid #000;
+            font-size: 0.9em;
+        }
+        .post-list { 
+            list-style: none; 
+            padding: 0; 
+        }
+        .post-list li { 
+            margin: 0.5em 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="/">Home</a> | 
+                <a href="/speeches/">All Speeches</a>
+            </nav>
+        </header>
+        
+        <main>
+            {{ content }}
+        </main>
+        
+        <footer>
+            <p>
+                <strong>{{ site.title }}</strong> | Updated: {{ site.time | date: "%Y-%m-%d" }}<br>
+                {% if site.repository %}<a href="https://github.com/{{ site.repository }}">View on GitHub</a> | {% endif %}
+                Built with <a href="https://github.com/brennanbrown/inkpage">InkPage</a><br>
+                <small>Code: MIT License | Content: Public Domain</small>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
