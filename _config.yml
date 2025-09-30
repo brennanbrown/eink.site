@@ -1,0 +1,46 @@
+# E-Ink Reader Website Configuration
+# Minimal Jekyll configuration optimized for e-ink devices
+
+# Site settings
+title: "E-Ink Speech Reader"
+description: "Minimalist speech and presentation reader optimized for e-ink devices"
+author: "Your Name" # Change this to your name
+baseurl: "" # Leave empty for root deployment, or "/repo-name" for GitHub Pages subdirectory
+url: "" # Your site URL (e.g., https://yourdomain.com or leave empty for Netlify auto-detect)
+github_username: "" # Your GitHub username (optional)
+repository: "" # Your repository in format: username/repo-name (optional)
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Exclude from build
+exclude:
+  - README.md
+  - QUICKSTART.md
+  - CONTENT-GUIDE.md
+  - SETUP.md
+  - Gemfile
+  - Gemfile.lock
+  - docs/
+  - vendor/
+  - netlify.toml
+
+# Collections (for future expansion)
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
+# Disable unnecessary Jekyll features for performance
+sass:
+  style: compressed
+show_excerpts: false
