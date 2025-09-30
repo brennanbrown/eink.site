@@ -1,0 +1,76 @@
+/* Minimal CSS for E-Ink Reader Website */
+/* This file is optional - all critical CSS is inlined in the layout */
+/* Use this for any additional styling if needed */
+
+/* Absolute minimum styling */
+body { 
+    font-family: serif; 
+    margin: 1em; 
+    background: white; 
+    color: black; 
+    line-height: 1.4;
+}
+
+h1 { 
+    font-size: 1.4em; 
+    margin: 0.5em 0; 
+}
+
+h2 { 
+    font-size: 1.2em; 
+    margin: 0.5em 0; 
+}
+
+h3 {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+p { 
+    margin: 0.5em 0; 
+}
+
+a { 
+    color: black; 
+    text-decoration: underline; 
+}
+
+a:visited {
+    color: #333;
+}
+
+.container { 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+/* Lists */
+ul, ol {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+}
+
+li {
+    margin: 0.25em 0;
+}
+
+/* Code blocks (if needed) */
+code {
+    font-family: monospace;
+    background: #f5f5f5;
+    padding: 0.1em 0.3em;
+}
+
+pre {
+    background: #f5f5f5;
+    padding: 0.5em;
+    overflow-x: auto;
+    margin: 0.5em 0;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+}
