@@ -8,6 +8,7 @@ author: "Your Name" # Change this to your name
 baseurl: "" # Leave empty for root deployment, or "/repo-name" for GitHub Pages subdirectory
 url: "" # Your site URL (e.g., https://yourdomain.com or leave empty for Netlify auto-detect)
 github_username: "" # Your GitHub username (optional)
+twitter_username: "" # Your Twitter/X username without @ (optional, for Twitter Cards)
 repository: "" # Your repository in format: username/repo-name (optional)
 
 # Build settings
