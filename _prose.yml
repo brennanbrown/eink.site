@@ -1,0 +1,37 @@
+prose:
+  rooturl: '_posts'
+  siteurl: '' # Your site URL (e.g., https://yourdomain.com)
+  media: 'assets/images'
+  
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Speech Title"
+          placeholder: "Enter your speech title"
+          help: "This will be displayed as the main heading"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          placeholder: "YYYY-MM-DD"
+          help: "Format: 2025-09-30"
+          value: CURRENT_DATETIME
+      - name: "category"
+        field:
+          element: "select"
+          label: "Category"
+          help: "Choose the most appropriate category"
+          options:
+            - name: "Business"
+              value: "business"
+            - name: "Personal"
+              value: "personal"
+            - name: "Technical"
+              value: "technical"
+          selected: "personal"
