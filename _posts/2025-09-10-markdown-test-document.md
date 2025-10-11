@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Markdown Formatting Test - Excerpt from The Great Gatsby"
+title: "Markdown Formatting Test"
 date: 2025-09-10
 category: technical
 ---
